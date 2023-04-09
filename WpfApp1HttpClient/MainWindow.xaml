@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp1HttpClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1HttpClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBox Height="50"
+                     Margin="5"
+                     Name="adressTextBox"
+                     />
+            <TextBlock x:Name="codeTextBlock" 
+                       Height="30"                       
+                       Margin="5"/>
+            <TextBox x:Name="responseTextBox" 
+                       Height="250" 
+                       Margin="5"
+                       TextWrapping="Wrap"                       
+                       />
+            <Button Height="35"
+                    Width="150"
+                    Margin="5"
+                    Click="Button_Click">Load</Button>
+        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="1"/>
+    </Grid>
+</Window>
